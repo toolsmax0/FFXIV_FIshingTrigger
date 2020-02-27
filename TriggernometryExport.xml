@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<TriggernometryExport Version="1">
+  <ExportedFolder Id="c0d24294-d4fa-4f01-a9b7-be53072513fc" Name="Local triggers" Enabled="true">
+    <Folders>
+      <Folder Id="c3cf58cb-8344-46b8-8d10-7218f0e88d35" Name="钓鱼" Enabled="true">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="false" Name="其他职业" Id="791ed794-5ee6-4a56-a99b-3cd55aaab015" RegularExpression="." PrevActionsRefire="Deny">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="6cd72e7f-52bd-4c6f-ba33-970d7a651723" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="791ed794-5ee6-4a56-a99b-3cd55aaab015" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].job}" ExpressionTypeL="String" ExpressionR="FSH" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+            </Condition>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="捕鱼人" Id="6cd72e7f-52bd-4c6f-ba33-970d7a651723" RegularExpression="." PrevActionsRefire="Deny">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="791ed794-5ee6-4a56-a99b-3cd55aaab015" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="6cd72e7f-52bd-4c6f-ba33-970d7a651723" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].job}" ExpressionTypeL="String" ExpressionR="FSH" ExpressionTypeR="String" ConditionType="StringNotEqualNocase" />
+            </Condition>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="保持开启" Id="24ab70c4-3db8-4bd8-b0f6-911e9c98adc3" RegularExpression=".+发动了.(收藏品采集|隐行).">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="false" Name="收藏品提醒" Id="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" RegularExpression=".*" PeriodRefire="Deny" RefirePeriodExpression="3000">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="收藏品采集" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="采集力提醒" Id="0c7c3290-61a4-4422-83c5-63a5cfe99246" RegularExpression=".">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="7193715e-018f-412f-aae3-cc576dc7cae0" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="0c7c3290-61a4-4422-83c5-63a5cfe99246" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].currentgp}" ExpressionTypeL="Numeric" ExpressionR="${_ffxivparty[1].maxgp}" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
+            </Condition>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="false" Name="采集力回复中" Id="7193715e-018f-412f-aae3-cc576dc7cae0" RegularExpression=".">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="GP已满" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="0c7c3290-61a4-4422-83c5-63a5cfe99246" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="7193715e-018f-412f-aae3-cc576dc7cae0" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].currentgp}" ExpressionTypeL="Numeric" ExpressionR="${_ffxivparty[1].maxgp}" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
+            </Condition>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="强心剂" Id="37ad71d9-d569-40a7-b9d5-a0b6d8a2817e" RegularExpression=".+使用了.+(?&lt;!高级)强心剂.+">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="当前GP${_ffxivparty[1].currentgp}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="240000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="高级强心剂" Id="3b4d2bce-0935-41bd-98ad-46033058f232" RegularExpression=".+使用了.+高级强心剂.+">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="当前GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="180000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="警惕" Id="de88ae37-3296-4bcc-a204-b7caf782056c" RegularExpression="警惕性.?很高">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="更换钓鱼地点" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="收杆" Id="9107edf4-af9f-4ceb-9b48-8322b32113fb" RegularExpression=".+在诺弗兰特大陆坡甩出了鱼线开始钓鱼">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="收" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="14500">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="拍击水面" Id="b8706d68-7dec-4440-88e5-4b7aadd776cf" RegularExpression=".+成功钓上了.*黑风鱼">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="提前收杆" Id="a7dc7f97-aee9-4b5f-9746-6c1ab8f52905" RegularExpression="有鱼上钩了|没有钓到任何东西">
+            <Actions>
+              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="9107edf4-af9f-4ceb-9b48-8322b32113fb" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="true" Name="雇员探险" Id="3d0da1b6-e05c-4c09-b24b-ac4c46408518" RegularExpression="雇员.+成功完成了探险">
+        <Actions>
+          <Action OrderNumber="1" UseTTSTextExpression="雇员探险归来" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
