@@ -96,10 +96,10 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="4c363749-13db-45dc-a7be-a442cf8967ae" Name="激活此项,但不要更改内容" Enabled="true">
+      <Folder FFXIVJobFilterEnabled="True" FFXIVJobFilter="131072" Id="4c363749-13db-45dc-a7be-a442cf8967ae" Name="激活此项,但不要更改内容" Enabled="true">
         <Folders />
         <Triggers>
-          <Trigger Enabled="false" Name="采集力回复中" Id="7193715e-018f-412f-aae3-cc576dc7cae0" RegularExpression=".">
+          <Trigger Enabled="true" Name="采集力回复中" Id="7193715e-018f-412f-aae3-cc576dc7cae0" RegularExpression=".">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="GP已满" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
@@ -135,7 +135,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="当前GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="180000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -159,7 +158,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="更换钓鱼地点" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -168,7 +166,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -179,7 +176,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="当前GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="240000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -190,7 +186,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="收藏品采集" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -199,7 +194,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="收" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="14500">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -210,7 +204,6 @@
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="9107edf4-af9f-4ceb-9b48-8322b32113fb" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -219,7 +212,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="以小钓大" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -233,7 +225,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="雇员探险归来" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
@@ -242,7 +233,6 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="${1}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
