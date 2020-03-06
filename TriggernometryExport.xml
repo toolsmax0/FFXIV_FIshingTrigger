@@ -7,7 +7,7 @@
         <Triggers>
           <Trigger Enabled="true" Name="采集职业" Id="6cd72e7f-52bd-4c6f-ba33-970d7a651723" RegularExpression="." PrevActionsRefire="Deny">
             <Actions>
-              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" ActionType="Trigger">
+              <Action OrderNumber="1" FolderOp="DisableFolder" FolderId="4c363749-13db-45dc-a7be-a442cf8967ae" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Folder">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
@@ -15,47 +15,7 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
-              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="7193715e-018f-412f-aae3-cc576dc7cae0" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="4" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="0c7c3290-61a4-4422-83c5-63a5cfe99246" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="5" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="3b4d2bce-0935-41bd-98ad-46033058f232" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="6" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="24ab70c4-3db8-4bd8-b0f6-911e9c98adc3" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="7" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="de88ae37-3296-4bcc-a204-b7caf782056c" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="8" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="b8706d68-7dec-4440-88e5-4b7aadd776cf" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="9" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="37ad71d9-d569-40a7-b9d5-a0b6d8a2817e" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="10" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="9107edf4-af9f-4ceb-9b48-8322b32113fb" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="11" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="a7dc7f97-aee9-4b5f-9746-6c1ab8f52905" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="12" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="6cd72e7f-52bd-4c6f-ba33-970d7a651723" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="13" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="176c6813-de14-4747-8bb3-e925ae4dc6c0" ActionType="Trigger">
+              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="6cd72e7f-52bd-4c6f-ba33-970d7a651723" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
@@ -67,55 +27,19 @@
           </Trigger>
           <Trigger Enabled="false" Name="其他职业" Id="791ed794-5ee6-4a56-a99b-3cd55aaab015" RegularExpression="." PrevActionsRefire="Deny">
             <Actions>
-              <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="6cd72e7f-52bd-4c6f-ba33-970d7a651723" ActionType="Trigger">
+              <Action OrderNumber="1" FolderId="4c363749-13db-45dc-a7be-a442cf8967ae" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Folder">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
-              <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" ActionType="Trigger">
+              <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="6cd72e7f-52bd-4c6f-ba33-970d7a651723" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
-              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="7193715e-018f-412f-aae3-cc576dc7cae0" ActionType="Trigger">
+              <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
-              <Action OrderNumber="4" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="0c7c3290-61a4-4422-83c5-63a5cfe99246" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="5" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="3b4d2bce-0935-41bd-98ad-46033058f232" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="6" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="24ab70c4-3db8-4bd8-b0f6-911e9c98adc3" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="7" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="de88ae37-3296-4bcc-a204-b7caf782056c" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="8" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="b8706d68-7dec-4440-88e5-4b7aadd776cf" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="9" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="37ad71d9-d569-40a7-b9d5-a0b6d8a2817e" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="10" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="176c6813-de14-4747-8bb3-e925ae4dc6c0" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="11" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="9107edf4-af9f-4ceb-9b48-8322b32113fb" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="12" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="a7dc7f97-aee9-4b5f-9746-6c1ab8f52905" ActionType="Trigger">
-                <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
-              </Action>
-              <Action OrderNumber="13" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="791ed794-5ee6-4a56-a99b-3cd55aaab015" ActionType="Trigger">
+              <Action OrderNumber="4" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="791ed794-5ee6-4a56-a99b-3cd55aaab015" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
@@ -127,7 +51,7 @@
           </Trigger>
         </Triggers>
       </Folder>
-      <Folder Id="4c363749-13db-45dc-a7be-a442cf8967ae" Name="激活此项,但不要更改内容" Enabled="true">
+      <Folder Id="4c363749-13db-45dc-a7be-a442cf8967ae" Name="自动触发，无需手动激活" Enabled="true">
         <Folders />
         <Triggers>
           <Trigger Enabled="false" Name="采集力回复中" Id="7193715e-018f-412f-aae3-cc576dc7cae0" RegularExpression=".">
@@ -230,7 +154,7 @@
             </Condition>
             <Conditions />
           </Trigger>
-          <Trigger Enabled="true" Name="收藏品提醒" Id="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" RegularExpression=".*" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny">
+          <Trigger Enabled="false" Name="收藏品提醒" Id="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" RegularExpression=".*" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="收藏品采集" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" Asynchronous="False" RefireInterrupt="True" RefireRequeue="False">
                 <Condition Enabled="false" Grouping="Or" />
@@ -260,6 +184,10 @@
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
+              <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="d21d327a-24bb-4239-9fd1-4a1ba1346310" ActionType="Trigger">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
             <Conditions />
@@ -277,6 +205,18 @@
           <Trigger Enabled="true" Name="强心剂HQ" Id="85509b39-1c71-41e7-b72c-914146eb6614" RegularExpression="(.+)恢复了350点采集力">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="当前GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="216000">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="true" Grouping="Or">
+              <ConditionSingle Enabled="true" ExpressionL="${1}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="RegexMatch" />
+            </Condition>
+            <Conditions />
+          </Trigger>
+          <Trigger Enabled="true" Name="引螈" Id="d21d327a-24bb-4239-9fd1-4a1ba1346310" RegularExpression="(.+)在蛇水湖甩出了鱼线开始钓鱼">
+            <Actions>
+              <Action OrderNumber="1" UseTTSTextExpression="收" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="11000">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
