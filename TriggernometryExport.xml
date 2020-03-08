@@ -105,7 +105,9 @@
           <Trigger Enabled="false" Name="采集力回复中" Id="7193715e-018f-412f-aae3-cc576dc7cae0" RegularExpression=".">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="GP已满" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
+                <Condition Enabled="true" Grouping="Or">
+                  <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].job}" ExpressionTypeL="String" ExpressionR="FSH" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+                </Condition>
                 <Conditions />
               </Action>
               <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="0c7c3290-61a4-4422-83c5-63a5cfe99246" ActionType="Trigger">
@@ -126,11 +128,9 @@
             <Actions>
               <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="7193715e-018f-412f-aae3-cc576dc7cae0" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="0c7c3290-61a4-4422-83c5-63a5cfe99246" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -239,13 +239,11 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="大地恩惠" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="180000">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
               <ConditionSingle Enabled="true" ExpressionL="${1}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="RegexMatch" />
             </Condition>
-            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
