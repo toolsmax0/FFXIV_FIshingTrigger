@@ -108,15 +108,12 @@
                 <Condition Enabled="true" Grouping="Or">
                   <ConditionSingle Enabled="true" ExpressionL="${_ffxivparty[1].job}" ExpressionTypeL="String" ExpressionR="FSH" ExpressionTypeR="String" ConditionType="StringEqualCase" />
                 </Condition>
-                <Conditions />
               </Action>
               <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="EnableTrigger" TriggerId="0c7c3290-61a4-4422-83c5-63a5cfe99246" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
               <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="DisableTrigger" TriggerId="7193715e-018f-412f-aae3-cc576dc7cae0" ActionType="Trigger">
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="And">
@@ -189,7 +186,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${1}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="RegexMatch" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Name="收藏品提醒" Id="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" RegularExpression=".*" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny">
+          <Trigger Enabled="false" Name="收藏品提醒" Id="9edfee3e-b33c-4a11-b5fd-4d90f06c7e09" RegularExpression=".*" PrevActions="Interrupt" PrevActionsRefire="Deny" PeriodRefire="Deny">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="收藏品采集" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" Asynchronous="False" RefireInterrupt="True" RefireRequeue="False">
                 <Condition Enabled="false" Grouping="Or" />
@@ -258,10 +255,11 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="商品售出" Id="850c3900-a14f-4b6f-826c-466920e10c4c" RegularExpression="在.+市场以.+的价格出售的(.+成功售出.获得了.+金币)" Scheduling="FromLastAction">
+          <Trigger Enabled="true" Name="商品售出" Id="850c3900-a14f-4b6f-826c-466920e10c4c" RegularExpression="在.+市场以.+的价格出售的(.+)×(.+成功售出.获得了.+金币)" Scheduling="FromLastAction">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="${1}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" Asynchronous="False">
+              <Action OrderNumber="1" UseTTSTextExpression="${1} × ${2}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
