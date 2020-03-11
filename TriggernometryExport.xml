@@ -255,9 +255,9 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="商品售出" Id="850c3900-a14f-4b6f-826c-466920e10c4c" RegularExpression="在.+市场以.+的价格出售的(.+)×(.+成功售出.获得了.+金币)" Scheduling="FromLastAction">
+          <Trigger Enabled="true" Name="商品售出" Id="850c3900-a14f-4b6f-826c-466920e10c4c" RegularExpression="在.+市场以.+的价格出售的(.+)(×)?([0-9,]*)(.*)" Scheduling="FromLastAction">
             <Actions>
-              <Action OrderNumber="1" UseTTSTextExpression="${1} × ${2}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" Asynchronous="False">
+              <Action OrderNumber="1" UseTTSTextExpression="${1} ${2}${3}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" Asynchronous="False">
                 <Condition Enabled="false" Grouping="Or" />
                 <Conditions />
               </Action>
