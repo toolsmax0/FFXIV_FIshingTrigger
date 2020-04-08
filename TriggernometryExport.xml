@@ -253,121 +253,97 @@
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="5000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="1" Id="f790c732-a38b-4d92-913e-b26b5a0aae2d" RegularExpression="终于到了最后一战">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="6000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="3" Id="7d3b24f7-d8b2-4151-a4dc-5a5c904a1f47" RegularExpression="你就继续追那家伙">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="9000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="4" Id="74067112-0547-4667-a574-ce6d0146e6df" RegularExpression="外墙的尽头连接着地下设施">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="6000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="5" Id="bb39cfac-59e9-42a3-ac30-31f3ab084cf1" RegularExpression="从那里还要走上一段距离">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="10000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="8" Id="2741e9e9-3d8b-416a-a7ac-d6b300ad645e" RegularExpression="只有在我的铁腕统治">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="4000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="6" Id="6281a171-a867-440b-bb9f-0afe9f4a776a" RegularExpression="将你的力量和能力">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="4000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="7" Id="d3fc8523-2cf7-4995-8b65-034352405fd8" RegularExpression="你可不要乱来啊">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="7000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="10" Id="363ffdbe-1609-4822-8a08-10f6054e5b0f" RegularExpression="领教一下究极神兵">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="17000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="9" Id="4e69d7d2-b4e9-4510-8beb-a3be974809e4" RegularExpression="领悟到正确的使用方法">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="22000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="11" Id="35908b16-ad39-447d-b19b-48a57a4946bc" RegularExpression="获得真正的答案">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="23000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
               <Trigger Enabled="true" Name="12" Id="508a1468-d7b1-47c4-beb4-e951f8927bda" RegularExpression="随着这黑暗的要塞一起消失吧">
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="动画结束" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="5000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
-                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
@@ -391,6 +367,16 @@
               </Action>
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="狩猎" Id="903f1735-d044-49d4-a35d-8915e64b58fa" RegularExpression="00:0010">
+            <Actions>
+              <Action OrderNumber="1" PlaySoundFileExpression="狩猎怪" UseTTSTextExpression="狩猎怪" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
           </Trigger>
         </Triggers>
       </Folder>
