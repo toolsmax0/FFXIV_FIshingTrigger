@@ -347,29 +347,33 @@
               </Trigger>
             </Triggers>
           </Folder>
-          <Folder Id="6f7c0ff2-f52d-4bab-b424-7c83cd99aee6" Name="巧手之魂(同时只能用一个)" Enabled="true">
+          <Folder Id="6f7c0ff2-f52d-4bab-b424-7c83cd99aee6" Name="巧手之魂(同时只能用一个)" Enabled="false">
             <Folders>
               <Folder Id="a120fd8c-2454-4e75-a6ee-f4a6fc95a4db" Name="单宏收藏" Enabled="false">
                 <Folders />
                 <Triggers>
                   <Trigger Enabled="true" Name="开始" Id="90255b6a-0509-4a25-a5ed-a9eb8a485227" RegularExpression="从背包里取出了材料">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="1" Id="77f991d3-149a-4066-9b70-f0388140e12f" RegularExpression="单宏收藏">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                       <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
-                      <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay2}">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -393,24 +397,27 @@
                   </Trigger>
                 </Triggers>
               </Folder>
-              <Folder Id="bcd04046-6eb4-4cf5-83fd-b67ff9bd8304" Name="单宏非收藏" Enabled="true">
+              <Folder Id="bcd04046-6eb4-4cf5-83fd-b67ff9bd8304" Name="单宏非收藏" Enabled="false">
                 <Folders />
                 <Triggers>
                   <Trigger Enabled="true" Name="开始" Id="4a572232-a446-4185-96ed-c21626bfd510" RegularExpression="从背包里取出了材料">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="1" Id="a9c26c3d-28fb-4b37-a080-389255d47def" RegularExpression="单宏非收藏">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
-                      <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay2}">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -439,30 +446,35 @@
                 <Triggers>
                   <Trigger Enabled="true" Name="开始" Id="2011ab4e-f286-4c19-93c6-0f8fc496f60c" RegularExpression="从背包里取出了材料">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="1" Id="5e48b1a6-31e3-4126-8491-9e636cb6a02e" RegularExpression="双宏收藏1">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="69" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="69" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="2" Id="15bf0ac6-8b40-4d78-9cad-5f92a2aaf315" RegularExpression="双宏收藏2">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                       <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
-                      <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay2}">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -495,27 +507,31 @@
                 <Triggers>
                   <Trigger Enabled="true" Name="开始" Id="7df38924-e115-403c-bb8b-66998cee22e6" RegularExpression="从背包里取出了材料">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="1" Id="7146f135-7f38-41e0-ab85-9e76c58eb2a9" RegularExpression="双宏非收藏1">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="69" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="69" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
                   <Trigger Enabled="true" Name="2" Id="de898936-a419-4ac2-99fa-c40a6dcc5504" RegularExpression="双宏非收藏2">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
-                      <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay}">
+                      <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay2}">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -524,19 +540,15 @@
                     <Actions>
                       <Action OrderNumber="1" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="7df38924-e115-403c-bb8b-66998cee22e6" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="7146f135-7f38-41e0-ab85-9e76c58eb2a9" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="de898936-a419-4ac2-99fa-c40a6dcc5504" ActionType="Trigger">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                       <Action OrderNumber="4" UseTTSTextExpression="素材不足" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                         <Condition Enabled="false" Grouping="Or" />
-                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -545,13 +557,24 @@
               </Folder>
             </Folders>
             <Triggers>
-              <Trigger Enabled="true" Name="自行调整间隔（毫秒）" Id="0abb4d16-f18b-4e76-ac60-449d402b1cc5" RegularExpression=".">
+              <Trigger Enabled="true" Name="自行调整间隔1（毫秒）" Id="0abb4d16-f18b-4e76-ac60-449d402b1cc5" RegularExpression=".">
                 <Actions>
-                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="delay" VariableExpression="500" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="delay" VariableExpression="1000" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                     <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="自行调整间隔2（毫秒）" Id="e4421af7-8161-4726-b46d-9e4718d888f0" RegularExpression=".">
+                <Actions>
+                  <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="delay2" VariableExpression="300" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
+                    <Condition Enabled="false" Grouping="Or" />
+                    <Conditions />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Trigger>
             </Triggers>
           </Folder>
