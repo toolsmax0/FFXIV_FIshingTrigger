@@ -354,7 +354,7 @@
                 <Triggers>
                   <Trigger Enabled="true" Name="开始" Id="90255b6a-0509-4a25-a5ed-a9eb8a485227" RegularExpression="从背包里取出了材料">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay2}">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
@@ -402,7 +402,7 @@
                 <Triggers>
                   <Trigger Enabled="true" Name="开始" Id="4a572232-a446-4185-96ed-c21626bfd510" RegularExpression="从背包里取出了材料">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay2}">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
@@ -446,7 +446,7 @@
                 <Triggers>
                   <Trigger Enabled="true" Name="开始" Id="2011ab4e-f286-4c19-93c6-0f8fc496f60c" RegularExpression="从背包里取出了材料">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay2}">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
@@ -507,7 +507,7 @@
                 <Triggers>
                   <Trigger Enabled="true" Name="开始" Id="7df38924-e115-403c-bb8b-66998cee22e6" RegularExpression="从背包里取出了材料">
                     <Actions>
-                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                      <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="${var:delay2}">
                         <Condition Enabled="false" Grouping="Or" />
                         <Conditions />
                       </Action>
