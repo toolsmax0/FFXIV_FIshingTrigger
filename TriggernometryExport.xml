@@ -190,6 +190,7 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="收藏品采集" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" Asynchronous="False" RefireInterrupt="True" RefireRequeue="False">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -222,7 +223,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="true" Name="强心剂HQ" Id="85509b39-1c71-41e7-b72c-914146eb6614" RegularExpression="(.+)恢复了350点采集力">
+          <Trigger Enabled="false" Name="强心剂HQ" Id="85509b39-1c71-41e7-b72c-914146eb6614" RegularExpression="(.+)恢复了350点采集力">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="当前GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="216000">
                 <Condition Enabled="false" Grouping="Or" />
@@ -232,7 +233,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${1}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="RegexMatch" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="true" Name="大地恩惠" Id="1c5ef9d1-5bee-473d-9e2a-3375e5eb3640" RegularExpression="(.+)发动了“大地的恩惠”">
+          <Trigger Enabled="false" Name="大地恩惠" Id="1c5ef9d1-5bee-473d-9e2a-3375e5eb3640" RegularExpression="(.+)发动了“大地的恩惠”">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="大地恩惠" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="180000">
                 <Condition Enabled="false" Grouping="Or" />
@@ -352,7 +353,7 @@
               <Folder Id="856bf095-3b28-4be5-8f28-0dbff540d007" Name="料理" Enabled="true">
                 <Folders />
                 <Triggers>
-                  <Trigger Enabled="true" Name="我要使用料理" Id="5bd88b6b-a314-49e0-ac7e-f2f17ffcc756" RegularExpression=".">
+                  <Trigger Enabled="false" Name="我要使用料理" Id="5bd88b6b-a314-49e0-ac7e-f2f17ffcc756" RegularExpression=".">
                     <Actions>
                       <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="Food_Enabled" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -360,7 +361,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="保持开启(改名字)" Id="c7b0086c-0cb9-4c81-9da0-5cbf890dbd53" RegularExpression="对落灯花附加了.*进食.的效果" RefirePeriodExpression="1680000">
+                  <Trigger Enabled="true" Name="保持开启(改名字)" Id="c7b0086c-0cb9-4c81-9da0-5cbf890dbd53" RegularExpression="对魔匠之友附加了.*进食.的效果" RefirePeriodExpression="20000">
                     <Actions>
                       <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="Food_Time" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -373,7 +374,7 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="false" Name="我不使用料理" Id="259de56f-2c4f-492a-bac9-35e8c027b549" RegularExpression=".">
+                  <Trigger Enabled="true" Name="我不使用料理" Id="259de56f-2c4f-492a-bac9-35e8c027b549" RegularExpression=".">
                     <Actions>
                       <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="Food_Enabled" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
@@ -394,13 +395,15 @@
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
                   </Trigger>
-                  <Trigger Enabled="true" Name="保持开启(改名字)" Id="7c12a3e8-36dc-4433-a672-a2e5a83ba4c5" RegularExpression="对落灯花附加了.*强化药.的效果">
+                  <Trigger Enabled="true" Name="保持开启(改名字)" Id="7c12a3e8-36dc-4433-a672-a2e5a83ba4c5" RegularExpression="对魔匠之友附加了.*强化药.的效果">
                     <Actions>
                       <Action OrderNumber="1" VariableOp="SetNumeric" VariableName="Potion_Time" VariableExpression="1" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                       <Action OrderNumber="2" VariableOp="SetNumeric" VariableName="Potion_Time" VariableExpression="0" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="Variable" ExecutionDelayExpression="780000">
                         <Condition Enabled="false" Grouping="Or" />
+                        <Conditions />
                       </Action>
                     </Actions>
                     <Condition Enabled="false" Grouping="Or" />
@@ -419,9 +422,8 @@
             <Triggers>
               <Trigger Enabled="true" Name="1:开始" Id="72da0fd5-3810-40c1-b57e-225d089aac73" RegularExpression="从背包里取出了材料">
                 <Actions>
-                  <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                  <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressExpression="{NUMPAD0}" KeyPressCode="81" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="1000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -430,7 +432,6 @@
                 <Actions>
                   <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="69" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -466,13 +467,13 @@
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
               </Trigger>
-              <Trigger Enabled="true" Name="4:循环(改名字)" Id="77c7e1d1-6d87-4182-8c23-034a95dd0970" RegularExpression="落灯花制作.+成功">
+              <Trigger Enabled="true" Name="4:循环(改名字)" Id="77c7e1d1-6d87-4182-8c23-034a95dd0970" RegularExpression="魔匠之友制作.+成功">
                 <Actions>
                   <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="2000">
                     <Condition Enabled="false" Grouping="Or" />
                     <Conditions />
                   </Action>
-                  <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="27" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="cc44a77b-4861-47c7-89a9-05a7f4c591f2" TriggerForce="regexp,conditions" ActionType="Trigger" ExecutionDelayExpression="50">
+                  <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="27" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerId="cc44a77b-4861-47c7-89a9-05a7f4c591f2" TriggerForce="regexp,conditions" ActionType="Trigger" ExecutionDelayExpression="2000">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionGroup Enabled="true" Grouping="And">
                         <ConditionSingle Enabled="true" ExpressionL="${var:Food_Enabled}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
@@ -485,7 +486,7 @@
                     </Condition>
                     <Conditions />
                   </Action>
-                  <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="50">
+                  <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="300">
                     <Condition Enabled="true" Grouping="Not">
                       <ConditionGroup Enabled="true" Grouping="Or">
                         <ConditionGroup Enabled="true" Grouping="And">
@@ -507,7 +508,7 @@
               </Trigger>
               <Trigger Enabled="true" Name="5:buff" Id="cc44a77b-4861-47c7-89a9-05a7f4c591f2" RegularExpression="">
                 <Actions>
-                  <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="27" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                  <Action OrderNumber="1" KeypressType="WindowMessage" KeyPressCode="27" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="1000">
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionGroup Enabled="true" Grouping="And">
                         <ConditionSingle Enabled="true" ExpressionL="${var:Food_Enabled}" ExpressionTypeL="Numeric" ExpressionR="1" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
@@ -518,7 +519,6 @@
                         <ConditionSingle Enabled="true" ExpressionL="${var:Potion_Time}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       </ConditionGroup>
                     </Condition>
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="2" KeypressType="WindowMessage" KeyPressCode="70" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="2500">
                     <Condition Enabled="true" Grouping="Or">
@@ -527,7 +527,6 @@
                         <ConditionSingle Enabled="true" ExpressionL="${var:Food_Time}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       </ConditionGroup>
                     </Condition>
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="3" KeypressType="WindowMessage" KeyPressCode="82" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="2500">
                     <Condition Enabled="true" Grouping="Or">
@@ -536,23 +535,18 @@
                         <ConditionSingle Enabled="true" ExpressionL="${var:Potion_Time}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericEqual" />
                       </ConditionGroup>
                     </Condition>
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="4" KeypressType="WindowMessage" KeyPressCode="78" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="2500">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
-                  <Action OrderNumber="5" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+                  <Action OrderNumber="5" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="1000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
-                  <Action OrderNumber="6" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+                  <Action OrderNumber="6" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="1000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
-                  <Action OrderNumber="7" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="500">
+                  <Action OrderNumber="7" KeypressType="WindowMessage" KeyPressCode="96" KeyPressWindow="最终幻想XIV" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress" ExecutionDelayExpression="1000">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -575,14 +569,6 @@
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
               <Action OrderNumber="2" UseTTSTextExpression="在水晶都市场以85的价格出售的“雷之水晶”× 1,000成功售出，获得了85,000金币。" TextAuraFontSize="9" TextAuraFontName="宋体" Enabled="False" ActionType="UseTTS">
-                <Condition Enabled="false" Grouping="Or" />
-              </Action>
-            </Actions>
-            <Condition Enabled="false" Grouping="Or" />
-          </Trigger>
-          <Trigger Enabled="true" Name="狩猎" Id="903f1735-d044-49d4-a35d-8915e64b58fa" RegularExpression="00:0010">
-            <Actions>
-              <Action OrderNumber="1" PlaySoundFileExpression="狩猎怪" UseTTSTextExpression="狩猎怪" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                 <Condition Enabled="false" Grouping="Or" />
               </Action>
             </Actions>
