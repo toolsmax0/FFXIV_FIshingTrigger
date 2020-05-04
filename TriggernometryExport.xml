@@ -139,6 +139,7 @@
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="当前GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="180000">
                 <Condition Enabled="false" Grouping="Or" />
+                <Conditions />
               </Action>
             </Actions>
             <Condition Enabled="true" Grouping="Or">
@@ -222,7 +223,7 @@
             </Actions>
             <Condition Enabled="false" Grouping="Or" />
           </Trigger>
-          <Trigger Enabled="false" Name="强心剂HQ" Id="85509b39-1c71-41e7-b72c-914146eb6614" RegularExpression="(.+)恢复了350点采集力">
+          <Trigger Enabled="true" Name="强心剂HQ" Id="85509b39-1c71-41e7-b72c-914146eb6614" RegularExpression="(.+)恢复了350点采集力">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="当前GP${_ffxivparty[1].currentgp}" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="216000">
                 <Condition Enabled="false" Grouping="Or" />
@@ -232,7 +233,7 @@
               <ConditionSingle Enabled="true" ExpressionL="${1}" ExpressionTypeL="String" ExpressionR="${_ffxivparty[1].name}" ExpressionTypeR="String" ConditionType="RegexMatch" />
             </Condition>
           </Trigger>
-          <Trigger Enabled="false" Name="大地恩惠" Id="1c5ef9d1-5bee-473d-9e2a-3375e5eb3640" RegularExpression="(.+)发动了“大地的恩惠”">
+          <Trigger Enabled="true" Name="大地恩惠" Id="1c5ef9d1-5bee-473d-9e2a-3375e5eb3640" RegularExpression="(.+)发动了“大地的恩惠”">
             <Actions>
               <Action OrderNumber="1" UseTTSTextExpression="大地恩惠" UseTTSVolumeExpression="80" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS" ExecutionDelayExpression="180000">
                 <Condition Enabled="false" Grouping="Or" />
@@ -443,27 +444,21 @@
                 <Actions>
                   <Action OrderNumber="1" UseTTSTextExpression="素材不足" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="UseTTS">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="2" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="72da0fd5-3810-40c1-b57e-225d089aac73" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="3" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="9be588b0-7ce0-4da4-bcd8-efc05522936b" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="4" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="9643fc1b-149e-45e0-97a0-18a21379618a" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="5" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="77c7e1d1-6d87-4182-8c23-034a95dd0970" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                   <Action OrderNumber="6" TextAuraFontSize="9" TextAuraFontName="宋体" TriggerOp="CancelTrigger" TriggerId="cc44a77b-4861-47c7-89a9-05a7f4c591f2" ActionType="Trigger">
                     <Condition Enabled="false" Grouping="Or" />
-                    <Conditions />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
@@ -814,6 +809,27 @@
                     <Condition Enabled="true" Grouping="Or">
                       <ConditionSingle Enabled="true" ExpressionL="${1}" ExpressionTypeL="Numeric" ExpressionR="0" ExpressionTypeR="Numeric" ConditionType="NumericNotEqual" />
                     </Condition>
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+            </Triggers>
+          </Folder>
+          <Folder Id="8f754888-0abb-47b7-8ed4-c08946701310" Name="自动录像" Enabled="true">
+            <Folders />
+            <Triggers>
+              <Trigger Enabled="true" Name="开始" Id="b7582bab-edb9-4cdb-8edc-8a0576badcf5" RegularExpression="^.{14} 00:0839:(.+)任务开始">
+                <Actions>
+                  <Action OrderNumber="1" KeyPressExpression="%{F9}" UseTTSTextExpression="${1}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                    <Condition Enabled="false" Grouping="Or" />
+                  </Action>
+                </Actions>
+                <Condition Enabled="false" Grouping="Or" />
+              </Trigger>
+              <Trigger Enabled="true" Name="结束" Id="ce85b775-1088-4238-bc8c-5f01aca4a12f" RegularExpression="^.{14} 00:0839:(.+)任务结束了">
+                <Actions>
+                  <Action OrderNumber="1" KeyPressExpression="%{F9}" UseTTSTextExpression="${1}" TextAuraFontSize="9" TextAuraFontName="宋体" ActionType="KeyPress">
+                    <Condition Enabled="false" Grouping="Or" />
                   </Action>
                 </Actions>
                 <Condition Enabled="false" Grouping="Or" />
